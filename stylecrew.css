@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/background-crew-desktop.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+}
+
+
+nav {
+    display: flex;
+    align-items: center; /* Align items in a row */
+    gap: 15px; /* Adds space between elements */
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+  
+  nav hr {
+    flex-grow: 0.6; /* Makes the hr take available space */
+    height: 0.5px; /* Defines thickness */
+    background-color: #aaa5a5; /* Dark color */
+    border: none; /* Removes default border */
+  }
+
+
+  nav ul li a{
+    color: white;
+    text-transform: uppercase;
+
+  }
+
+  nav li{
+    margin-right: 40px;
+  }
+
+  nav ul li a span{
+    color: #fff;
+    padding-right: 10px;
+    font-weight: 900;
+  }
+
+  
+
+  nav ul {
+    background: linear-gradient(to right, rgb(67, 68, 70),  rgb(34, 34, 44));
+    padding: 30px;}
+
+    /* nav ul:hover{
+        text-decoration: underline;
+        color: #fff;
+        text-decoration-thickness: 3px;
+      text-underline-offset: 30px;
+
+    } */
+
+
+    nav ul li a {
+      position: relative;
+      text-decoration: none;
+      color: white; /* Adjust as needed */
+      padding-bottom: 5px; /* Space between text and underline */
+      display: inline-block;
+  }
+  
+   nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      width: 100%;
+      height: 3px;
+      background-color: white; /* Adjust as needed */
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::after {
+      transform: scaleX(1);
+      text-underline-offset: 30px;
+    
+  }
+  
+
+    
+
+    .firstdiv h2{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        padding:80px 0px 100px 180px;
+    }
+    
+    .firstdiv span{
+        color: #aaa5a5;
+        padding-right: 20px;
+        
+    }
+
+
+    .overall-firstdiv h2{
+        color: #aaa5a5;
+        font-weight: 100;
+        font-family:"Roboto", sans-serif;
+        padding-bottom: 10px;
+        font-size: 19px;
+        
+
+    }
+
+    /* .overall-firstdiv{
+        
+    padding:40px 0px 10px 180px;
+    } */
+
+    .overall-firstdiv h1{
+        color: #fff;
+        font-family:  "Gentium Plus", serif ;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 35px;
+        padding-bottom: 15px;
+
+    }
+
+    .overall-firstdiv p{
+        color: #aaa5a5;
+        width: 395px;
+    }
+
+    /* .overall-firstdiv{
+      display: flex;
+
+    } */
+
+     .overall-firstdiv img{
+      /* margin-top: -110px; */
+      margin-left: 50px;
+    } 
+
+    
+  
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 400%; /* Adjust based on the number of slides */
+      white-space: nowrap; /* Prevents line breaks */
+  }
+  
+  .overall-firstdiv {
+      min-width: 100%;
+      flex: 1 0 100%; /* Ensures proper spacing */
+      display: flex;
+      align-items: center;
+      padding: 0 10px 0 180px;
+      margin-top: -50px;
+  }
+
+  .overall-firstdiv img{
+    margin-left: 130px;
+    margin-top: 50px;
+  }
+  
+  .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-520%) translateY(-1000%);
+      text-align: center;
+  }
+  
+  .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: gray;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+      background-color: white;
+  }
+  
+  .overall-firstdivwriting {
+      position: relative;
+      top: -100px; /* Adjust as needed */
+      right: 10px;
+      
+  }
+
+  
+  
